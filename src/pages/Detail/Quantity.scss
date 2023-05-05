@@ -1,0 +1,46 @@
+.quantity {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 25px 0;
+
+    .quantity-control {
+      display: flex;
+      border-radius: 1px;
+      border: 0.5px solid #999;
+      > * {
+        height: 32px;
+      }
+      input {
+        width: 50px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        text-align: center;
+        border-left: 0.5px solid #999;
+        border-right: 0.5px solid #999;
+      }
+      button {
+        border: none;
+        font-weight: 500;
+        font-size: 19px;
+        outline: none;
+        width: 32px;
+        padding: 0 6px;
+        background-color: white;
+      }
+    }
+  }
+  .quantity.small {
+    margin: 0;
+  }
+  .quantity.small .quantity-control > * {
+    height: 25px;
+  }
+  .quantity.small .quantity-control > input {
+    width: 40px;
+  }
+  .quantity.small .quantity-control > button {
+    width: 25px;
+  }

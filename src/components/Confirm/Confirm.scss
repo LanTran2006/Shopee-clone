@@ -1,0 +1,47 @@
+.confirm {
+  background-color: rgba(0, 0, 0, 0.511);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    background-color: white;
+    padding: 0 12px;
+    .heading {
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      i {
+        color: #666;
+        font-size: 20px;
+      }
+    }
+    .text {
+        color: black;
+      padding: 8px 0;
+      border-top: 0.5px solid #999;
+      border-bottom: 0.5px solid #999;
+    }
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      margin: 15px 0;
+      button {
+        border: none;
+        outline: none;
+        color: white;
+        &:first-child {
+          background-color: grey;
+          padding: 0 12px;
+        }
+        &:last-child {
+          background-color: dodgerblue;
+          padding: 8px;
+        }
+      }
+    }
+  }
+}
